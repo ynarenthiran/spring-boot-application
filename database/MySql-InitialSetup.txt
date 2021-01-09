@@ -1,0 +1,42 @@
+
+
+Extract or Install MYSQL in desktop
+Stop the service from windows Administrative service
+mysqld --initialize
+mysql-init.txt
+*********** Content Start  ***********
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'rootpass';
+*********** Content END    ***********
+execute the comment.
+
+mysqld --init-file=E:\\workouts\\mysqlstartup\\mysql-init.txt --console
+
+*******************
+
+Another Commend Prompt
+mysql -u root -p
+with given password rootpass
+
+
+GRANT ALL ON menagerie.* TO 'your_mysql_name'@'your_client_host';
+
+CREATE DATABASE EMPLOYEE;
+
+USE EMPLOYEE
+
+SHOW TABLES;
+
+CREATE TABLE EMP_MASTER (
+	ID INTEGER AUTO_INCREMENT PRIMARY KEY,
+	 VARCHAR(20),
+	LAST_NAME VARCHAR(20),
+    EMAIL VARCHAR(20), 
+    BIRTH_DATE DATE, 
+    YEAR_OF_EXP INTEGER);
+
+
+
+DROP TABLE EMP_MASTER;
+
+INSERT INTO     EMP_MASTER (firstName, lastName,email, sex,birth, YEAR_OF_EXP) VALUES(  'TEST FIRSTNAME', 'TEST LASTNAME','test@test.com','M','2012-12-31',2);
+
